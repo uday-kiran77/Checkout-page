@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "form card";
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 50px  0;
+}
+
+.form { grid-area: form; }
+
+.card { grid-area: card;
+    margin-top: 100px;
+    border-radius: 12px;
+    position: sticky;
+    top: 50px;
+}
+
+
+.form{
+   position: relative;
+   width: fit-content;
+   margin-left: auto;
+   margin-top: auto;
+   /* display: none; */
+}
+.form-input{
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+.form-input .input-inner{
+  position: relative;
+}
+.form-input input{
+  width: 100%;
+  max-width: 465px;
+  padding-left: 50px;
+  height: 56px;
+  font-size: 16px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  outline: none;
+  font-weight: 600;
+}
+input::placeholder{
+  color: #828282;
+
+
+}
+.form-input .title{
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-bottom: 6px;
+  color: #4f4f4f;
+}
+.input-inner i{
+  position: absolute;
+  z-index: 10;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-left: 15px;
+  color: #828282;
+}
+.input-inline{
+  float: left;
+  margin-right:30px ;
+  
+}
+.input-small input{
+  max-width:220px;
+  
+}
+.section-heading{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 10px 0;
+}
+.shipping-info{
+  margin-top: 50px;
+}
+.shipping-info .section-heading{
+  margin-bottom: 20px;
+}
+.checkbox{
+    
+
+}
+.termsandcond{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+}
+.termsandcond input{
+    transform: scale(1.5);
+    margin-left: 5px;
+}
+.termsandcond p{
+    margin-left: 10px;
+}
+
+.continue-btn{
+    float: right;
+    width: 166px;
+    height: 54px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f2994A;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: #F2F2F2;
+    width: 100%;
+    max-width: 383px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+.cart-item{
+    display: flex;
+    padding: 15px 0;
+}
+.card-image img{
+    width:140px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.item-name{
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 150px;
+}
+.item-spl-price{
+    font-size: 16px;
+    font-weight: 600;
+    color: #f2994A;
+    margin-right: 10px;
+}
+strike{
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.count-container{
+    display: flex;
+    max-width: 130px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #acacac;
+
+}
+.count-container button{
+    width: 22px;
+    margin: 10px;
+    font-size: 18px;
+    color: #828282;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+}
+.total-price{
+    width: 90%;
+    font-weight: 600;
+    
+}
+.shipping-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 010px 10px;
+    border:1px solid #828282;
+    border-left: none;
+    border-right: none;
+}
+
+.total-amount{
+    display: flex;
+    padding: 10px 20px 010px 10px;
+    justify-content: space-between;
+}
+.total-price .title{
+    font-size: 18px;
+}
+.total-price{
+    font-size: 14px;
+}
+
+@media screen and (max-width:770px){
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card"
+      "form";
+  }
+  
+  .card { grid-area: card;
+    position: relative;
+    top: unset;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .form { grid-area: form;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color:red;
+    max-width: 500px;
+  }
+  .input-small input{
+    max-width:unset;
+    width: 90vw; 
+    max-width: 468px;
+  }
+  .item-details{
+    transform: scale(0.9);
+    margin-left: -30px;
+  }
+  .card-image img{
+    transform: scale(0.8);
+    margin-left: 10px;
+  }
+  
+}
