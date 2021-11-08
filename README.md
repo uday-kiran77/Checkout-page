@@ -11,7 +11,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/O8Vk368WJZCC0gsGdGdq" target="_blank">
+    <a href="https://devchallenges.io/solutions/UR3jd2jeWT1ef8nZ0tZz" target="_blank">
       Solution
     </a>
     <span> | </span>
@@ -23,7 +23,7 @@
 
 
 
-![screenshot](https://github.com/uday-kiran77/404-Not-Found-Page/blob/main/assets/screenshot.png?raw=true)
+![screenshot](https://github.com/uday-kiran77/Checkout-page/blob/main/assets/screenshot.png?raw=true)
 
 ### Built With
 
