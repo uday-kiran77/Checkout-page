@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://uday-kiran77.github.io/404-Not-Found-Page/" target="_blank">
+    <a href="https://uday-kiran77.github.io/Checkout-page/" target="_blank">
       Demo
     </a>
     <span> | </span>
@@ -15,7 +15,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY" target="_blank">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO" target="_blank">
       Challenge
     </a>
   </h3>
