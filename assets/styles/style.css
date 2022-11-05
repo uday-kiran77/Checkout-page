@@ -242,7 +242,8 @@ strike{
       "form";
   }
   
-  .card { grid-area: card;
+  .card { 
+    grid-area: card;
     position: relative;
     top: unset;
     width: 90%;
@@ -255,11 +256,11 @@ strike{
 
   }
   
-  .form { grid-area: form;
+  .form { 
+    grid-area: form;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    background-color:red;
     max-width: 500px;
   }
   .input-small input{
